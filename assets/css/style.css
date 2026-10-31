@@ -378,6 +378,105 @@ h2 {
   background: #000;
 }
 
+/* Businesses */
+
+.venture-cards {
+  display: grid;
+  gap: 16px;
+  margin: 40px 0 8px;
+}
+
+@media (min-width: 720px) {
+  .venture-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .venture-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.venture-card {
+  display: block;
+  text-decoration: none;
+  background: #1c1c1c;
+  border: 1px solid #2c2c2c;
+  transition: border-color 0.2s;
+}
+
+.venture-card:hover {
+  border-color: var(--accent);
+}
+
+.venture-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.venture-card div {
+  padding: 20px 24px 24px;
+}
+
+.venture-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3em;
+}
+
+.venture-card p {
+  margin: 0;
+  color: #cfc9bf;
+}
+
+.page-intro {
+  padding: 96px 0 48px;
+}
+
+.page-intro .prose {
+  max-width: 640px;
+}
+
+.venture {
+  padding: 64px 0 96px;
+  border-top: 1px solid var(--line);
+}
+
+.venture-head {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.venture-head h2 {
+  margin-bottom: 0.1em;
+}
+
+.venture-logo {
+  width: 96px;
+  height: 96px;
+  flex: none;
+}
+
+.venture-tagline {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.venture-body {
+  max-width: 720px;
+}
+
+.venture .strip {
+  margin-top: 40px;
+}
+
 /* 404 */
 
 .not-found {
@@ -440,7 +539,7 @@ h2 {
   align-items: center;
 }
 
-.site-footer img {
-  width: 32px;
-  height: 32px;
+.site-footer .brand {
+  font-size: 1.2rem;
+  color: var(--ink);
 }

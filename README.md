@@ -1,10 +1,11 @@
-# Lebo Davies | OnlyBrands
+# Lebo Davies
 
 The website for **https://lebodavies.com**, rebuilt from the old Wix site as plain HTML and CSS. There's no build step, and it's hosted free on GitHub Pages.
 
 ## Files
 
-- `index.html`: the home page (About, OnlyBrands, Gallery)
+- `index.html`: the home page (About, Businesses, Gallery)
+- `entrepreneur/index.html`: the Businesses page at `/entrepreneur/`, with one section per business
 - `404.html`: shown for any address that doesn't exist
 - `assets/css/style.css`: all styling
 - `assets/js/main.js`: mobile menu and the gallery's full-size photo view
@@ -22,3 +23,8 @@ DNS is at Porkbun: four A records point to `185.199.108–111.153`, and `www` is
 ## Adding photos
 
 Resize new photos to about 1600 px on the long side and save them as WebP (for example with squoosh.app). Put them in `assets/img/`, then copy one of the `<a>…</a>` lines in the gallery in `index.html`.
+
+## Adding a business
+
+1. In `entrepreneur/index.html`, copy the whole `<section class="venture" id="onlybrands">` … `</section>` block, paste it below the last one, and change the `id`, logo, name, tagline, text and images.
+2. In `index.html`, copy the `<a class="venture-card">` … `</a>` block in the Businesses section and point its link at `/entrepreneur/#<the new id>`.
