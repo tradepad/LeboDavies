@@ -13,12 +13,13 @@ Content (bio, blog post, business description, photos, videos and logo) was take
 
 ## Before cancelling Wix: save the photos and videos
 
-The photos and videos are still loaded from Wix's servers. They'll keep working while the Wix site exists, even on the free plan. Run this once on any computer with Python 3 to copy them into the repo:
+The photos and videos are still loaded from Wix's servers. They'll keep working while the Wix site exists, even on the free plan. To copy them into the repo, use the GitHub Actions workflow included in the repo:
 
-```
-python3 scripts/localize_media.py
-git add -A && git commit -m "Store media locally" && git push
-```
+1. On GitHub, open the repository's **Actions** tab.
+2. Choose **Save photos and videos from Wix** in the list on the left.
+3. Click **Run workflow**, pick this branch, then click the green **Run workflow** button.
+
+After a minute or two it commits the files to `assets/media/` and updates the pages to use them. To run it on your own computer instead, use `python3 scripts/localize_media.py`.
 
 ## Putting it online (free)
 
