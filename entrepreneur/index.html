@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Businesses | Lebo Davies</title>
   <meta name="description" content="The businesses founded and led by Lebo Davies, including OnlyBrands, a luxury fashion destination featuring the world’s top designer brands.">
+  <meta name="theme-color" content="#070707">
   <link rel="canonical" href="https://lebodavies.com/entrepreneur/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lebodavies.com/entrepreneur/">
@@ -17,18 +18,19 @@
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Jost:wght@300;400&display=swap">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="/">Lebo Davies</a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav">
+      <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/entrepreneur/">Entrepreneur</a></li>
+          <li><a href="/#story">Story</a></li>
+          <li><a href="/entrepreneur/" aria-current="page">Businesses</a></li>
           <li><a href="/#gallery">Gallery</a></li>
         </ul>
       </nav>
@@ -38,11 +40,9 @@
   <main>
     <section class="page-intro">
       <div class="wrap">
-        <p class="eyebrow">Entrepreneur</p>
+        <span class="eyebrow">Entrepreneur</span>
         <h1>Businesses</h1>
-        <div class="prose">
-          <p>From Johannesburg to the world, Lebo Davies builds brands that bring together style, substance and community. Each one reflects her belief that fashion can be both beautiful and conscious.</p>
-        </div>
+        <p class="lede">From Johannesburg to the world, Lebo Davies builds brands that bring together style, substance and community. Each one reflects her belief that fashion can be both beautiful and conscious.</p>
       </div>
     </section>
 
@@ -50,27 +50,27 @@
       One <section class="venture"> per business. To add another:
         1. Copy everything from <section class="venture" ...> to its </section>.
         2. Paste it below the last business and change the id, logo, name, text and images.
-        3. Add a matching card to the "Businesses" section on the home page (index.html).
+        3. On the home page (index.html), add it to the Businesses section.
     -->
 
     <section class="venture" id="onlybrands">
       <div class="wrap">
-        <div class="venture-head">
+        <div class="venture-head reveal">
           <img class="venture-logo" src="/assets/img/onlybrands-logo.png" width="240" height="240" alt="OnlyBrands logo">
           <div>
-            <p class="eyebrow">Luxury fashion</p>
+            <span class="eyebrow" style="margin-bottom: 0.8rem">Luxury fashion</span>
             <h2>OnlyBrands</h2>
             <p class="venture-tagline">Where Luxury Meets Exclusivity</p>
           </div>
         </div>
-        <div class="prose venture-body">
+        <div class="prose reveal">
           <p>OnlyBrands is a luxury fashion destination featuring the world’s top designer brands: an exclusive high-end collection, handpicked from renowned fashion houses and brought together in one place. Timeless pieces, iconic styles, and cutting-edge fashion trends.</p>
           <p>Under Lebo’s leadership, OnlyBrands has become synonymous with curated luxury at accessible prices, with a commitment to ethical sourcing, inclusivity and sustainability.</p>
         </div>
         <!-- When OnlyBrands has its own website, remove the comment marks around this button and put in its address:
         <a class="btn" href="https://example.com" target="_blank" rel="noopener">Visit OnlyBrands</a>
         -->
-        <div class="strip">
+        <div class="strip reveal">
           <img src="/assets/img/onlybrands-1.webp" width="432" height="768" alt="OnlyBrands app showing Dolce & Gabbana" loading="lazy" decoding="async">
           <img src="/assets/img/onlybrands-2.webp" width="432" height="768" alt="OnlyBrands app showing women's clothing categories" loading="lazy" decoding="async">
           <img src="/assets/img/onlybrands-3.webp" width="432" height="768" alt="OnlyBrands app showing women's bags" loading="lazy" decoding="async">
@@ -83,8 +83,13 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span class="brand">Lebo Davies</span>
-      <span>&copy; <span data-year></span> Lebo Davies</span>
+      <a class="brand" href="/">Lebo Davies</a>
+      <ul class="footer-nav">
+        <li><a href="/#story">Story</a></li>
+        <li><a href="/entrepreneur/">Businesses</a></li>
+        <li><a href="/#gallery">Gallery</a></li>
+      </ul>
+      <p class="copyright">&copy; <span data-year></span> Lebo Davies. All rights reserved.</p>
     </div>
   </footer>
 

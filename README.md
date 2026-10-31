@@ -4,11 +4,11 @@ The website for **https://lebodavies.com**, rebuilt from the old Wix site as pla
 
 ## Files
 
-- `index.html`: the home page (About, Businesses, Gallery)
+- `index.html`: the home page (Story, What she does, Businesses, Gallery, Moments)
 - `entrepreneur/index.html`: the Businesses page at `/entrepreneur/`, with one section per business
 - `404.html`: shown for any address that doesn't exist
 - `assets/css/style.css`: all styling
-- `assets/js/main.js`: mobile menu and the gallery's full-size photo view
+- `assets/js/main.js`: mobile menu, header, scroll animations and the gallery photo viewer
 - `assets/img/`: photos (WebP), logo and icons
 - `assets/video/`: videos
 - `CNAME`: the custom domain (`lebodavies.com`)

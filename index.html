@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lebo Davies | Entrepreneur</title>
   <meta name="description" content="Lebo Davies: Johannesburg-born entrepreneur with over two decades in luxury fashion, and founder of OnlyBrands.">
+  <meta name="theme-color" content="#070707">
   <link rel="canonical" href="https://lebodavies.com/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lebodavies.com/">
@@ -18,18 +19,19 @@
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Jost:wght@300;400&display=swap">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="/">Lebo Davies</a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav">
+      <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/entrepreneur/">Entrepreneur</a></li>
+          <li><a href="/#story">Story</a></li>
+          <li><a href="/entrepreneur/">Businesses</a></li>
           <li><a href="/#gallery">Gallery</a></li>
         </ul>
       </nav>
@@ -37,94 +39,174 @@
   </header>
 
   <main>
-    <section class="hero" style="background-image: url('/assets/img/hero.webp')">
-      <div class="wrap">
-        <p class="eyebrow">Entrepreneur</p>
+    <section class="hero">
+      <img class="hero-media" src="/assets/img/hero.webp" width="900" height="1200" alt="Lebo Davies in a black tweed dress with feather cuffs" fetchpriority="high">
+      <div class="hero-content">
+        <p class="roles"><span>Entrepreneur</span><span>Founder</span><span>Fashion</span></p>
         <h1>Lebo Davies</h1>
-        <p>Johannesburg-born entrepreneur with over two decades of experience in luxury fashion, leading with purpose and passion.</p>
-        <a class="btn" href="/entrepreneur/">Her businesses</a>
+        <p class="lede">Curated luxury, conscious fashion, and a vision born in Johannesburg.</p>
+        <a class="btn" href="#story">Discover her story</a>
+        <span class="scroll-cue" aria-hidden="true"></span>
       </div>
     </section>
 
-    <section class="section" id="about">
+    <section class="section story" id="story">
       <div class="wrap split">
-        <img src="/assets/img/about.webp" width="623" height="1280" alt="Lebo Davies in a black tweed dress with feather cuffs" loading="lazy" decoding="async">
-        <div>
-          <p class="eyebrow">About</p>
-          <h2>Lebo Davies</h2>
+        <figure class="story-figure reveal" style="margin: 0">
+          <img src="/assets/img/about.webp" width="623" height="1280" alt="Lebo Davies in a black tweed dress with feather cuffs" loading="lazy" decoding="async">
+        </figure>
+        <div class="reveal">
+          <span class="eyebrow">The Story</span>
+          <h2>Over two decades shaping luxury fashion, with an eye for quality and a heart for purpose.</h2>
           <div class="prose">
             <p>Lebo Davies is a visionary entrepreneur whose passion for fashion and design has shaped the ethos of OnlyBrands. With over two decades of experience in the industry, she has successfully navigated the dynamic landscape of luxury fashion, emerging as a prominent figure known for her innovative approach and keen eye for quality.</p>
             <p>Lebo’s journey began in Johannesburg, where her love for contemporary design and rich cultural heritage inspired her to create pieces that resonate with elegance and sophistication. As the driving force behind OnlyBrands, she has cultivated a brand that not only offers exceptional products but also embodies the values of inclusivity and sustainability.</p>
             <p>Under her leadership, OnlyBrands has become synonymous with curated luxury at accessible prices, attracting a discerning clientele that appreciates both style and substance. Lebo’s commitment to ethical sourcing and environmental responsibility reflects her belief that fashion can be both beautiful and conscious.</p>
-            <p>As she continues to expand the reach of OnlyBrands globally, Lebo remains dedicated to empowering her team and fostering creativity within the industry. Her vision is to inspire others to embrace their unique style while promoting a sense of community and connection through fashion.</p>
-            <p>With an unwavering dedication to excellence, Lebo Davies exemplifies what it means to lead with purpose and passion, ensuring that OnlyBrands remains at the forefront of the luxury fashion market.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark" id="ventures">
+    <hr class="rule">
+
+    <section class="section">
       <div class="wrap">
-        <p class="eyebrow">Entrepreneur</p>
-        <h2>Businesses</h2>
-        <div class="prose">
-          <p>The brands Lebo has founded and leads.</p>
+        <div class="center reveal">
+          <span class="eyebrow">What she does</span>
+          <h2>Vision, taste and purpose</h2>
         </div>
-        <div class="venture-cards">
-          <!-- One card per business. To add another, copy this <a>…</a> block and change the link, image and text. -->
-          <a class="venture-card" href="/entrepreneur/#onlybrands">
-            <img src="/assets/img/onlybrands-4.webp" width="432" height="768" alt="OnlyBrands app showing women's accessories" loading="lazy" decoding="async">
-            <div>
-              <h3>OnlyBrands</h3>
-              <p>A luxury fashion destination featuring the world’s top designer brands.</p>
-            </div>
-          </a>
+        <div class="pillars reveal">
+          <div class="pillar">
+            <span class="num">01</span>
+            <h3>Entrepreneur</h3>
+            <p>Building brands with purpose, from Johannesburg to a global audience.</p>
+          </div>
+          <div class="pillar">
+            <span class="num">02</span>
+            <h3>Founder</h3>
+            <p>The driving force behind OnlyBrands, a destination for the world’s top designer brands.</p>
+          </div>
+          <div class="pillar">
+            <span class="num">03</span>
+            <h3>Curator</h3>
+            <p>A keen eye for quality, handpicking timeless pieces from renowned fashion houses.</p>
+          </div>
+          <div class="pillar">
+            <span class="num">04</span>
+            <h3>Advocate</h3>
+            <p>Championing ethical sourcing, sustainability and inclusivity in fashion.</p>
+          </div>
         </div>
-        <a class="btn" href="/entrepreneur/">View all businesses</a>
       </div>
     </section>
 
-    <section class="section" id="gallery">
+    <section class="ethos">
+      <div class="wrap reveal">
+        <span class="eyebrow">The Ethos</span>
+        <blockquote>Fashion can be both beautiful and conscious.</blockquote>
+      </div>
+    </section>
+
+    <section class="tiles" aria-label="Explore">
+      <a class="tile" href="/#story">
+        <img src="/assets/img/gallery-05-large.webp" alt="Portrait of Lebo Davies in a floral dress and pink fascinator" loading="lazy" decoding="async">
+        <span>The Story</span>
+      </a>
+      <a class="tile" href="/entrepreneur/">
+        <img src="/assets/img/gallery-14-large.webp" alt="Lebo Davies in an embellished sheer gown" loading="lazy" decoding="async">
+        <span>Businesses</span>
+      </a>
+      <a class="tile" href="/#gallery">
+        <img src="/assets/img/gallery-16-large.webp" alt="Lebo Davies in a navy sequinned gown with long sleeves" loading="lazy" decoding="async">
+        <span>The Look</span>
+      </a>
+    </section>
+
+    <section class="section section-alt" id="businesses">
       <div class="wrap">
-        <p class="eyebrow">Gallery</p>
-        <h2>The Look</h2>
-        <div class="gallery">
-          <a href="assets/img/gallery-01-large.webp"><img src="assets/img/gallery-01.webp" width="600" height="800" alt="Lebo Davies in a black tweed mini dress with feather cuffs on outdoor steps" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-02-large.webp"><img src="assets/img/gallery-02.webp" width="600" height="800" alt="Lebo Davies in a black tweed dress with jewelled buttons, posing on outdoor steps" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-03-large.webp"><img src="assets/img/gallery-03.webp" width="600" height="800" alt="Lebo Davies in a black dress at an outdoor event" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-04-large.webp"><img src="assets/img/gallery-04.webp" width="452" height="1280" alt="Lebo Davies in a floral dress and pink fascinator at a race day" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-05-large.webp"><img src="assets/img/gallery-05.webp" width="600" height="800" alt="Portrait of Lebo Davies in a floral dress and pink fascinator" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-06-large.webp"><img src="assets/img/gallery-06.webp" width="600" height="800" alt="Lebo Davies in a floral dress and fascinator, hand on hip" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-07-large.webp"><img src="assets/img/gallery-07.webp" width="600" height="800" alt="Lebo Davies in a floral dress indoors" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-08-large.webp"><img src="assets/img/gallery-08.webp" width="600" height="1233" alt="Lebo Davies in a black tweed dress with feather cuffs" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-09-large.webp"><img src="assets/img/gallery-09.webp" width="588" height="1280" alt="Lebo Davies in a black tweed dress, looking away" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-10-large.webp"><img src="assets/img/gallery-10.webp" width="378" height="1280" alt="Lebo Davies in a pink ruched dress and wide-brim hat on a lawn" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-11-large.webp"><img src="assets/img/gallery-11.webp" width="326" height="1280" alt="Lebo Davies in a pink dress and sun hat, full length" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-12-large.webp"><img src="assets/img/gallery-12.webp" width="600" height="966" alt="Close-up portrait of Lebo Davies with a sleek bob" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-13-large.webp"><img src="assets/img/gallery-13.webp" width="595" height="1280" alt="Close-up of Lebo Davies in a blush top" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-14-large.webp"><img src="assets/img/gallery-14.webp" width="600" height="751" alt="Lebo Davies in an embellished sheer gown" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-15-large.webp"><img src="assets/img/gallery-15.webp" width="600" height="751" alt="Lebo Davies in an embellished gown, hand on hip" loading="lazy" decoding="async"></a>
-          <a href="assets/img/gallery-16-large.webp"><img src="assets/img/gallery-16.webp" width="600" height="800" alt="Lebo Davies in a navy sequinned gown with long sleeves" loading="lazy" decoding="async"></a>
+        <div class="center reveal">
+          <span class="eyebrow">Businesses</span>
+          <h2>The brands she builds</h2>
         </div>
-        <div class="videos">
-          <video src="assets/video/video-1.mp4" poster="assets/img/video-1-poster.webp" controls playsinline preload="none" aria-label="Video of Lebo Davies"></video>
-          <video src="assets/video/video-2.mp4" poster="assets/img/video-2-poster.webp" controls playsinline preload="none" aria-label="Video of Lebo Davies"></video>
-          <video src="assets/video/video-3.mp4" poster="assets/img/video-3-poster.webp" controls playsinline preload="none" aria-label="Video of Lebo Davies"></video>
-          <video src="assets/video/video-4.mp4" poster="assets/img/video-4-poster.webp" controls playsinline preload="none" aria-label="Video of Lebo Davies"></video>
+        <div class="venture-feature reveal">
+          <div>
+            <img class="venture-logo" src="/assets/img/onlybrands-logo.png" width="240" height="240" alt="OnlyBrands logo" loading="lazy">
+            <span class="eyebrow">Luxury fashion</span>
+            <h3 style="font-size: clamp(2rem, 4vw, 3rem)">OnlyBrands</h3>
+            <p class="venture-tagline">Where Luxury Meets Exclusivity</p>
+            <p class="muted">A luxury fashion destination featuring the world’s top designer brands: an exclusive high-end collection, handpicked from renowned fashion houses and brought together in one place.</p>
+            <div class="venture-meta">
+              <a class="btn" href="/entrepreneur/#onlybrands">Explore OnlyBrands</a>
+              <a class="link" href="/entrepreneur/">All businesses</a>
+            </div>
+          </div>
+          <div class="screens">
+            <img src="/assets/img/onlybrands-3.webp" width="432" height="768" alt="OnlyBrands app showing women's bags" loading="lazy" decoding="async">
+            <img src="/assets/img/onlybrands-4.webp" width="432" height="768" alt="OnlyBrands app showing women's accessories" loading="lazy" decoding="async">
+            <img src="/assets/img/onlybrands-5.webp" width="432" height="768" alt="OnlyBrands app showing women's jewellery" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" id="gallery" style="padding-bottom: 0">
+      <div class="wrap center reveal" style="margin-bottom: 56px">
+        <span class="eyebrow">Gallery</span>
+        <h2>The Look</h2>
+      </div>
+      <div class="gallery">
+      <a href="/assets/img/gallery-01-large.webp"><img src="/assets/img/gallery-01.webp" width="600" height="800" alt="Lebo Davies in a black tweed mini dress with feather cuffs on outdoor steps" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-02-large.webp"><img src="/assets/img/gallery-02.webp" width="600" height="800" alt="Lebo Davies in a black tweed dress with jewelled buttons, posing on outdoor steps" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-03-large.webp"><img src="/assets/img/gallery-03.webp" width="600" height="800" alt="Lebo Davies in a black dress at an outdoor event" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-04-large.webp"><img src="/assets/img/gallery-04.webp" width="452" height="1280" alt="Lebo Davies in a floral dress and pink fascinator at a race day" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-05-large.webp"><img src="/assets/img/gallery-05.webp" width="600" height="800" alt="Portrait of Lebo Davies in a floral dress and pink fascinator" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-06-large.webp"><img src="/assets/img/gallery-06.webp" width="600" height="800" alt="Lebo Davies in a floral dress and fascinator, hand on hip" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-07-large.webp"><img src="/assets/img/gallery-07.webp" width="600" height="800" alt="Lebo Davies in a floral dress indoors" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-08-large.webp"><img src="/assets/img/gallery-08.webp" width="600" height="1233" alt="Lebo Davies in a black tweed dress with feather cuffs" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-09-large.webp"><img src="/assets/img/gallery-09.webp" width="588" height="1280" alt="Lebo Davies in a black tweed dress, looking away" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-10-large.webp"><img src="/assets/img/gallery-10.webp" width="378" height="1280" alt="Lebo Davies in a pink ruched dress and wide-brim hat on a lawn" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-11-large.webp"><img src="/assets/img/gallery-11.webp" width="326" height="1280" alt="Lebo Davies in a pink dress and sun hat, full length" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-12-large.webp"><img src="/assets/img/gallery-12.webp" width="600" height="966" alt="Close-up portrait of Lebo Davies with a sleek bob" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-13-large.webp"><img src="/assets/img/gallery-13.webp" width="595" height="1280" alt="Close-up of Lebo Davies in a blush top" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-14-large.webp"><img src="/assets/img/gallery-14.webp" width="600" height="751" alt="Lebo Davies in an embellished sheer gown" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-15-large.webp"><img src="/assets/img/gallery-15.webp" width="600" height="751" alt="Lebo Davies in an embellished gown, hand on hip" loading="lazy" decoding="async"></a>
+      <a href="/assets/img/gallery-16-large.webp"><img src="/assets/img/gallery-16.webp" width="600" height="800" alt="Lebo Davies in a navy sequinned gown with long sleeves" loading="lazy" decoding="async"></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="center reveal">
+          <span class="eyebrow">In Motion</span>
+          <h2>Moments</h2>
+        </div>
+        <div class="videos reveal">
+        <video src="/assets/video/video-1.mp4" poster="/assets/img/video-1-poster.webp" controls playsinline preload="none" aria-label="Video of Lebo Davies"></video>
+        <video src="/assets/video/video-2.mp4" poster="/assets/img/video-2-poster.webp" controls playsinline preload="none" aria-label="Video of Lebo Davies"></video>
+        <video src="/assets/video/video-3.mp4" poster="/assets/img/video-3-poster.webp" controls playsinline preload="none" aria-label="Video of Lebo Davies"></video>
+        <video src="/assets/video/video-4.mp4" poster="/assets/img/video-4-poster.webp" controls playsinline preload="none" aria-label="Video of Lebo Davies"></video>
         </div>
       </div>
     </section>
   </main>
 
-  <div class="lightbox" aria-hidden="true">
-    <button aria-label="Close">&times;</button>
+  <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+    <button class="lb-close" aria-label="Close">&times;</button>
+    <button class="lb-prev" aria-label="Previous photo">&lsaquo;</button>
     <img alt="">
+    <button class="lb-next" aria-label="Next photo">&rsaquo;</button>
+    <span class="lb-count"></span>
   </div>
 
   <footer class="site-footer">
     <div class="wrap">
-      <span class="brand">Lebo Davies</span>
-      <span>&copy; <span data-year></span> Lebo Davies</span>
+      <a class="brand" href="/">Lebo Davies</a>
+      <ul class="footer-nav">
+        <li><a href="/#story">Story</a></li>
+        <li><a href="/entrepreneur/">Businesses</a></li>
+        <li><a href="/#gallery">Gallery</a></li>
+      </ul>
+      <p class="copyright">&copy; <span data-year></span> Lebo Davies. All rights reserved.</p>
     </div>
   </footer>
 
