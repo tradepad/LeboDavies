@@ -1,32 +1,24 @@
 # Lebo Davies | OnlyBrands
 
-A static rebuild of the Wix site at https://pad1964.wixsite.com/lebo-davies. Plain HTML and CSS: no Wix, no build step, free to host.
-
-Content (bio, blog post, business description, photos, videos and logo) was taken from the Wix account. The page layout was redesigned, because Wix's layout can't be exported.
+The website for **https://lebodavies.com**, rebuilt from the old Wix site as plain HTML and CSS. There's no build step, and it's hosted free on GitHub Pages.
 
 ## Files
 
-- `index.html`: home page (hero, About, OnlyBrands, Gallery, News, Newsletter)
-- `news/opening-soon.html`: the "Opening Soon" blog post
-- `assets/css/style.css`, `assets/js/main.js`: styling, mobile menu, gallery lightbox
-- `scripts/localize_media.py`: downloads the photos and videos from Wix into the repo
+- `index.html`: the home page (About, OnlyBrands, Gallery)
+- `404.html`: shown for any address that doesn't exist
+- `assets/css/style.css`: all styling
+- `assets/js/main.js`: mobile menu and the gallery's full-size photo view
+- `assets/img/`: photos (WebP), logo and icons
+- `assets/video/`: videos
+- `CNAME`: the custom domain (`lebodavies.com`)
+- `robots.txt`, `sitemap.xml`: help search engines find the site
 
-## Before cancelling Wix: save the photos and videos
+## Hosting
 
-The photos and videos are still loaded from Wix's servers. They'll keep working while the Wix site exists, even on the free plan. To copy them into the repo, use the GitHub Actions workflow included in the repo:
+GitHub Pages publishes this branch automatically (**Settings → Pages**). Any change pushed here is live within a minute or two.
 
-1. On GitHub, open the repository's **Actions** tab.
-2. Choose **Save photos and videos from Wix** in the list on the left.
-3. Click **Run workflow**, pick this branch, then click the green **Run workflow** button.
+DNS is at Porkbun: four A records point to `185.199.108–111.153`, and `www` is a CNAME to `tradepad.github.io`. `lebodavies.co.za` (GoDaddy) forwards to `lebodavies.com`.
 
-After a minute or two it commits the files to `assets/media/` and updates the pages to use them. To run it on your own computer instead, use `python3 scripts/localize_media.py`.
+## Adding photos
 
-## Putting it online (free)
-
-**GitHub Pages:** in the repository's settings, open **Pages**, choose **Deploy from a branch**, and pick this branch with the `/ (root)` folder.
-
-Or connect the repository to Netlify or Cloudflare Pages. Neither needs a build command, and the publish directory is `/`.
-
-## Newsletter sign-up
-
-The form is hidden until it has somewhere to send sign-ups. Create a free form at https://formspree.io, then replace `YOUR_FORM_ID` in `index.html`.
+Resize new photos to about 1600 px on the long side and save them as WebP (for example with squoosh.app). Put them in `assets/img/`, then copy one of the `<a>…</a>` lines in the gallery in `index.html`.

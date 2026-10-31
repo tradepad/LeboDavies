@@ -42,15 +42,6 @@ if (box) {
   });
 }
 
-// Newsletter: until a real form ID is set, show a note instead of a broken form
-document.querySelectorAll(".signup form").forEach((form) => {
-  if (form.action.includes("YOUR_FORM_ID")) {
-    form.hidden = true;
-    const note = form.parentElement.querySelector(".form-note");
-    if (note) note.hidden = false;
-  }
-});
-
 document.querySelectorAll("[data-year]").forEach((el) => {
   el.textContent = new Date().getFullYear();
 });
